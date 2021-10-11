@@ -20,6 +20,9 @@ function valueToPosition(string $value, int $height, int $margin): array {
     if ($value == "null") {
         return ["pos" => $height - $margin, "color" => "gray"];
     }
+    if ($value == "c") {
+        return ["pos" => $height - $margin, "color" => "red"];
+    }
 
     $temp = floatval($value);
 
@@ -77,7 +80,7 @@ $points = [];
 
 try {
     $conn = new PDO('mysql:host=localhost;dbname=chart', 'cava', '');
-    $sql = 'SELECT day, temperature FROM data ORDER BY day';
+    $sql = 'SELECT id, day, temperature FROM data ORDER BY day';
     $points = $conn->query($sql);
 } catch (PDOException $e) {
     die("Could not connect to db");

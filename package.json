@@ -1,0 +1,22 @@
+{
+  "name": "chart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c-a-v-a/chart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/c-a-v-a/chart/issues"
+  },
+  "homepage": "https://github.com/c-a-v-a/chart#readme",
+  "dependencies": {
+    "typescript": "^4.4.3"
+  }
+}
